@@ -1,213 +1,196 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #dc143c;
-        }
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #dc143c;
+}
 
-        header h1 {
-            color: #dc143c;
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
+header h1 {
+    color: #dc143c;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
 
-        .tagline {
-            color: #555;
-            font-size: 18px;
-            font-style: italic;
-        }
+.tagline {
+    color: #555;
+    font-size: 18px;
+    font-style: italic;
+}
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            background-color: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-        .back-link:hover {
-            background-color: #764ba2;
-        }
+.intro-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
 
-        .intro-section {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
+.intro-section h2 {
+    color: #dc143c;
+    margin-bottom: 15px;
+}
 
-        .intro-section h2 {
-            color: #dc143c;
-            margin-bottom: 15px;
-        }
+.intro-section p {
+    line-height: 1.6;
+    color: #333;
+}
 
-        .intro-section p {
-            line-height: 1.6;
-            color: #333;
-        }
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
 
-        .cars-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
+.car-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-        .car-card {
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+.car-image {
+    width: 100%;
+    height: 250px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .car-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-        .car-image {
-            width: 100%;
-            height: 250px;
-            background-color: #e9ecef;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.car-card h3 {
+    color: #dc143c;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
 
-        .car-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+.car-details {
+    margin: 15px 0;
+}
 
-        .car-card h3 {
-            color: #dc143c;
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
+.car-details p {
+    margin: 8px 0;
+    color: #555;
+}
 
-        .car-details {
-            margin: 15px 0;
-        }
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin: 15px 0;
+}
 
-        .car-details p {
-            margin: 8px 0;
-            color: #555;
-        }
-
-        .price {
-            font-size: 24px;
-            font-weight: bold;
-            color: #28a745;
-            margin: 15px 0;
-        }
-
-        .buy-button {
-            width: 340px;     /* Set your desired fixed width */
+.buy-button {
+    width: 340px;
     max-width: 100%;
-            padding: 12px;
-            background-color: #dc143c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    padding: 12px;
+    background-color: #dc143c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-        .buy-button:hover {
-            background-color: #a00d2a;
-        }
+.income-Checker {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f3f5;
+    border-radius: 10px;
+}
 
-        .income-Checker {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f1f3f5;
-            border-radius: 10px;
-        }
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #0a0a0a;
+    color: #0e0d0d;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 2px solid #0a0a0a;
-            color: #0e0d0d;
-        }
+.responsible-label {
+    background-color: #667eea;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
-        .responsible-label {
-            background-color: #667eea;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .finance-form {
-            display: flex;
+.finance-form {
+    display: flex;
     flex-direction: column;
     gap: 12px;
     max-width: 400px;
     margin: 0 auto;
     margin-top: 15px;
-        }
+}
 
-        .finance-form label {
-            text-align: left;
+.finance-form label {
+    text-align: left;
     font-weight: bold;
-        }
+}
 
-        .finance-form input[type="text"] {
-            width: 100%;
-            padding: 6px 16px;
-            border: 1px solid #f1f3f5;
-            border-radius: 4px;
-        }
+.finance-form input[type="text"] {
+    width: 100%;
+    padding: 6px 16px;
+    border: 1px solid #f1f3f5;
+    border-radius: 4px;
+}
 
 .finance-results {
-  display: block;
-  text-align: center;  
+    display: block;
+    text-align: center;  
 }
 
 .finance-results .buy-button {
-  display: inline-block;
-  margin: 15px auto 0;  
+    display: inline-block;
+    margin: 15px auto 0;  
 }
 
-
 #forbid, #limit, #full {
-  margin-top: 8px;
-  padding: 4px 8px;
-  color: #080808;
+    margin-top: 8px;
+    padding: 4px 8px;
+    color: #080808;
 }
