@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image:  linear-gradient(to bottom, rgb(229, 25, 25), rgb(75, 12, 12));;
+        color: rgb(250, 238, 238);
+    }
+
+    /* Navigation */
+    .navbar {
+        background: rgb(0,0,0);
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    .navbar h1 {
+        margin: 0;
+        font-size: 22px;
+        color: rgb(206, 43, 43);
+    }
+
+    .navbar a {
+        color:rgb(250, 238, 238);
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .navbar a:hover {
+        color: rgb(233, 37, 30);
+    }
+
+    /* Hero */
+    .toptext {
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(175, 24, 24));
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .toptext h2 {
+        font-size: 40px;
+    }
+
+    /* Car grid */
+    .cars {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .car {
+        background: rgb(34, 34, 34);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .3s;
+    }
+
+    .car:hover {
+        transform: scale(1.03);
+    }
+
+    .car img {
+        width: 100%;
+        display: block;
+    }
+
+    .car-info {
+        padding: 20px;
+    }
+
+    .car-info h3 {
+        margin-top: 0;
+        color:rgb(233, 37, 30);
+    }
+
+    .price {
+        font-size: 20px;
+        color:rgb(42, 206, 64) ;
+        margin: 10px 0;
+    }
+
+    .btn {
+        background:rgb(196, 37, 32) ;
+        border: none;
+        padding: 12px 18px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background: rgb(238, 110, 110);
+    }
+
+    .fin{
+        background: rgb(114, 43, 43);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .3s;
+        width: 207.9%;
+        text-align: center;
+        
+    }
+
+    .fin:hover {
+        transform: scale(1.03);
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background: rgb(0, 0, 0);
+        margin-top: 30px;
+        color: rgb(99, 96, 96);
+    }
+</style>
+</head>
+<body>
+    <div class="navbar">
+    <h1>Lamborghini Sales</h1>
+    <div>
+        <a href="#cars">Cars</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="toptext">
+    <h2>YOU CAN'T HIDE WHO YOU ARE</h2>
+</div>
+
+<!-- Car Showcase -->
+<div id="cars" class="cars">
+
+    <!-- Car 1 -->
+    <div class="car">
+        <img src="images/Lamborghini-Aventador-red.jpg" alt="Lamborghini Aventador">
+        <div class="car-info">
+            <h3>Lamborghini Aventador</h3>
+            <p>A V12 monster delivering unmatched performance and style.</p>
+            <div class="price">$450,000</div>
+            <a class="btn" href="#">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Car 2 -->
+    <div class="car">
+        <img src="images/Huracan.jpg" alt="Lamborghini Huracán">
+        <div class="car-info">
+            <h3>Lamborghini Huracán</h3>
+            <p>V10 elegance with breathtaking acceleration and handling.</p>
+            <div class="price">$320,000</div>
+            <a class="btn" href="#">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Car 3 -->
+    <div class="car">
+        <img src="images/urus.webp" alt="Lamborghini Urus">
+        <div class="car-info">
+            <h3>Lamborghini Urus</h3>
+            <p>The most powerful luxury SUV with Lamborghini DNA.</p>
+            <div class="price">$260,000</div>
+            <a class="btn" href="#">Buy Now</a>
+        </div>
+    </div>
+
+     <!-- Car 4 -->
+    <div class="car">
+        <img src="images/Temerario.webp" alt="Lamborghini Temerario">
+        <div class="car-info">
+            <h3>Lamborghini Temerario</h3>
+            <p>V8 twin-turbo engine paired with three electric motors for ultimate performance and comfort.</p>
+            <div class="price">$380,000</div>
+            <a class="btn" href="#">Buy Now</a>
+        </div>
+    </div>
+
+    <!--Financing options-->
+
+    <div class="fin">
+        <h2>Financial Services</h2>
+        </div>
+        <br>
+
+
+     <div class="fin">
+          <p>Lamborghini Financial Services offers flexible leasing and financing solutions to provide you with an incredible experience and Lamborghini ownership.
+        Whether you prefer to lease or purchase your dream car, we understand your needs and will be sure to give you our utmost support and to guide you in your new, or pre-owned, selection. 
+        Realize your dreams by visiting your local Authorized Lamborghini Dealer, and let them pave the way for a brand new, seamless experience.
+        Be unstoppable. Start your exclusive journey with Lamborghini Financial Services.</p>
+     </div>
+
+
+    </div>
+
+</div>
+
+
+
+</div>
+
+<!-- Footer -->
+<div id="contact" class="footer">
+    © 2025 Lamborghini Sales — All Rights Reserved
+</div>
+
+</body>
+</html>
