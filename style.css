@@ -205,6 +205,7 @@
   margin: 15px auto 0;  
 }
 
+<<<<<<< HEAD
 
 #forbid, #limit, #full {
   margin-top: 8px;
@@ -226,10 +227,13 @@
 .brand-section.zinovii {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
+=======
+>>>>>>> f9dc05acc59805f5a4d24ae657673d3507902fe1
 
 .brand-section.abel {
     background: red
 }
+<<<<<<< HEAD
 
 .brand-section.james {
     background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
@@ -329,3 +333,5 @@ footer {
 }
 =======
 >>>>>>> e54c27450afba76d2a2291383b36aeb5a0fd0bb7
+=======
+>>>>>>> f9dc05acc59805f5a4d24ae657673d3507902fe1
