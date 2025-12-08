@@ -1,101 +1,217 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    padding: 20px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-.container {
-    max-width: 1200px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #dc143c;
+        }
+
+        header h1 {
+            color: #dc143c;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #555;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-link:hover {
+            background-color: #764ba2;
+        }
+
+        .intro-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .intro-section h2 {
+            color: #dc143c;
+            margin-bottom: 15px;
+        }
+
+        .intro-section p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .car-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 250px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .car-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .car-card h3 {
+            color: #dc143c;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .car-details {
+            margin: 15px 0;
+        }
+
+        .car-details p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28a745;
+            margin: 15px 0;
+        }
+
+        .buy-button {
+            width: 340px;     /* Set your desired fixed width */
+    max-width: 100%;
+            padding: 12px;
+            background-color: #dc143c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #a00d2a;
+        }
+
+        .income-Checker {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f3f5;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #0a0a0a;
+            color: #0e0d0d;
+        }
+
+        .responsible-label {
+            background-color: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .finance-form {
+            display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
     margin: 0 auto;
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-}
+    margin-top: 15px;
+        }
 
-header {
-    text-align: center;
-    margin-bottom: 50px;
-    padding-bottom: 30px;
-    border-bottom: 3px solid #667eea;
-}
-
-h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.tagline {
-    color: #666;
-    font-size: 1.2em;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-/* Login Form Styling */
-.login-container {
-    margin-top: 30px;
-}
-
-#loginForm {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#fullName {
-    padding: 12px 20px;
-    border: 2px solid #667eea;
-    border-radius: 25px;
-    font-size: 1em;
-    min-width: 250px;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-#fullName:focus {
-    border-color: #764ba2;
-    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
-}
-
-#loginForm button {
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+        .finance-form label {
+            text-align: left;
     font-weight: bold;
+        }
+
+        .finance-form input[type="text"] {
+            width: 100%;
+            padding: 6px 16px;
+            border: 1px solid #f1f3f5;
+            border-radius: 4px;
+        }
+
+.finance-results {
+  display: block;
+  text-align: center;  
 }
 
-#loginForm button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+.finance-results .buy-button {
+  display: inline-block;
+  margin: 15px auto 0;  
 }
 
-/* Brand Sections */
-.brand-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 15px;
-    padding: 40px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: block;
-    color: white;
+
+#forbid, #limit, #full {
+  margin-top: 8px;
+  padding: 4px 8px;
+  color: #080808;
 }
+<<<<<<< HEAD
 
 .brand-section:hover {
     transform: translateY(-5px);
@@ -211,3 +327,5 @@ footer {
         width: 100%;
     }
 }
+=======
+>>>>>>> e54c27450afba76d2a2291383b36aeb5a0fd0bb7
