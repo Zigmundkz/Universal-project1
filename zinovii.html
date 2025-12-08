@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota - Universal Auto</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <header>
+            <h1>🚗 Toyota Collection</h1>
+            <p class="tagline">Quality, Reliability, Innovation</p>
+   
+        </header>
+
+        <div class="intro-section">
+            <h2>About Toyota</h2>
+            <p>
+                Toyota is a world-renowned Japanese automotive manufacturer known for producing reliable, 
+                efficient, and innovative vehicles. From compact cars to SUVs and hybrid vehicles, 
+                Toyota offers a diverse range of models that suit every lifestyle and budget. 
+                Discover our carefully selected Toyota models available at Universal Auto.
+            </p>
+        </div>
+
+        <div class="cars-grid">
+       
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="images/camry.jpg" alt="Toyota Camry">
+                </div>
+                <h3>Toyota Camry</h3>
+                <div class="car-details">
+                    <p><strong>Year:</strong> 2023</p>
+                    <p><strong>Engine:</strong> 2.5L 4-Cylinder</p>
+                    <p><strong>Transmission:</strong> Automatic</p>
+                    <p><strong>Mileage:</strong> 15,000 km</p>
+                    <p><strong>Color:</strong> Silver</p>
+                </div>
+                <p class="price">€28,500</p>
+                <button class="buy-button" onclick="buyNow('Toyota Camry')">Buy Now</button>
+            </div>
+
+    
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="images/rav4.jpg" alt="Toyota RAV4">
+                </div>
+                <h3>Toyota RAV4</h3>
+                <div class="car-details">
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Engine:</strong> 2.5L Hybrid</p>
+                    <p><strong>Transmission:</strong> CVT</p>
+                    <p><strong>Mileage:</strong> 8,000 km</p>
+                    <p><strong>Color:</strong> Blue</p>
+                </div>
+                <p class="price">€35,900</p>
+                <button class="buy-button" onclick="buyNow('Toyota RAV4')">Buy Now</button>
+            </div>
+
+     
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="images/corolla.jpg" alt="Toyota Corolla">
+                </div>
+                <h3>Toyota Corolla</h3>
+                <div class="car-details">
+                    <p><strong>Year:</strong> 2023</p>
+                    <p><strong>Engine:</strong> 1.8L Hybrid</p>
+                    <p><strong>Transmission:</strong> Automatic</p>
+                    <p><strong>Mileage:</strong> 12,000 km</p>
+                    <p><strong>Color:</strong> White</p>
+                </div>
+                <p class="price">€24,200</p>
+                <button class="buy-button" onclick="buyNow('Toyota Corolla')">Buy Now</button>
+            </div>
+            
+        </div>
+<div class="income-Checker">
+  <h4>Car finance</h4>
+  <h5>Please enter your year income in thousands</h5>
+
+  <div class="finance-form">
+    <label for="name1">Name:</label>
+    <input type="text" id="name1" />
+    <label for="income">Yearly income:</label>
+    <input type="text" id="income" />
+  </div>
+
+  <div class="finance-results">
+    <input type="button"
+           value="Check"
+           onclick="incomeChecker();"
+           class="buy-button"
+           style="margin-top:15px; display:block;"/>
+
+    <div id="forbid" style="display:none;">Sorry, we can't provide finance for you</div>
+    <div id="limit" style="display:none;">We can provide finance for Toyota Corolla and Camry</div>
+    <div id="full"  style="display:none;">We can provide finance for Toyota Rav4</div>
+  </div>
+</div>
+
+        <footer>
+            <p>&copy; 2025 Universal Auto - Toyota Collection</p>
+            <p>Developed with ❤️ by Zinovii</p>
+        </footer>
+    </div>
+
+    <script>
+        function buyNow(carName) {
+            alert(`Thank you for your interest in ${carName}!\n\nOur sales team will contact you shortly to complete the purchase.\n\nContact: +380 (44) 123-45-67`);
+        }
+    </script>
+    <div>
+
+<script src="zinovii.js"></script>
+</body>
+</html>
