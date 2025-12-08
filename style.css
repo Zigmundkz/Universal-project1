@@ -189,8 +189,126 @@ footer {
     margin: 15px auto 0;  
 }
 
+
 #forbid, #limit, #full {
     margin-top: 8px;
     padding: 4px 8px;
     color: #080808;
 }
+
+.brand-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.brand-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.brand-section.zinovii {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.brand-section.abel {
+    background: red
+}
+
+
+.brand-section.james {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.brand-label {
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Info Sections */
+.info-section {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.description {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.info-box h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.support-section {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #333;
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.footer-credits {
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .brand-section h2 {
+        font-size: 1.5em;
+    }
+
+    #fullName {
+        min-width: 100%;
+    }
+
+    #loginForm button {
+        width: 100%;
+    }
+}
+
