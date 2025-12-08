@@ -1,0 +1,49 @@
+ .cars {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .car {
+        background: rgb(34, 34, 34);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .3s;
+    }
+
+    .car:hover {
+        transform: scale(1.05);
+    }
+
+    .car img {
+        width: 100%;
+        display: block;
+    }
+
+    .car-info {
+        padding: 20px;
+    }
+
+    .car-info h3 {
+        margin-top: 0;
+        color:rgb(233, 37, 30);
+    }
+
+      .button {
+        background:rgb(196, 37, 32) ;
+        border: none;
+        padding: 12px 18px;
+        font-size: 16px;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .button:hover {
+        background: rgb(238, 110, 110);
+    }
